@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Shannon Fitness</title>
+    <!-- Custom styles for this template -->
+    <link href="../static/assets/css/style.css" rel="stylesheet">
+    <!-- FAVICONS -->
+    <link rel="icon" href="../static/assets/img/fav.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    <!-- Pre Loader Area start -->
+    <div id="preloader">
+      <div class="preloader-window left-window"></div>
+      <div class="preloader-window right-window"></div>
+      <div class="spinner-block">
+        <div class="spinner-eff spinner-eff-3">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Pre Loader Area End -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-sm-none d-md-block d-lg-block d-xl-block" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a class="top-header-logo-wrap" href="../">
+                  <img src="../static/assets/img/shannon.svg" alt="Shannon Fitness">
+                </a>
+                {% with request.resolver_match.url_name as url_name %}
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'index' %}active{% endif %}" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'about_us' %}active{% endif %}" href="../about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'team' %}active{% endif %}" href="../team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'packages' %}active{% endif %}" href="../packages">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'gallery' %}active{% endif %}" href="../gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'blog' %}active{% endif %}" href="../blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'contact_us' %}active{% endif %}" href="../contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    {% endwith %}
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+        <!-- Mobile Menu Start -->
+        <nav class="mobile_menu hidden d-none">
+          <a href="../">
+            <img class="mobile-logo" src="../static/assets/img/shannon.svg" alt="Shannon Fitness">
+          </a>
+          <ul class="nav navbar-nav navbar-right menu">
+           <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'index' %}active{% endif %}" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'about_us' %}active{% endif %}" href="../about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'team' %}active{% endif %}" href="../team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'packages' %}active{% endif %}" href="../packages">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'gallery' %}active{% endif %}" href="../gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'blog' %}active{% endif %}" href="../blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'contact_us' %}active{% endif %}" href="../contact">Contact Us</a>
+                        </li>
+          </ul>
+        </nav>
+        <!-- Mobile Menu End -->
